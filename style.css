@@ -179,13 +179,14 @@ body {
 
 }
 
-#projectImg {
+.img-thumbnail{
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    padding: 2%;
   }
   
-  #projectImg:hover {
+.img-thumbnail:hover {
     opacity: 0.7;
   }
   
@@ -196,8 +197,6 @@ body {
     /* Stay in place */
     z-index: 1;
     /* Sit on top */
-    padding-top: 100px;
-    /* Location of the box */
     left: 0;
     top: 0;
     width: 100%;
@@ -209,14 +208,23 @@ body {
     background-color: rgb(0, 0, 0);
     /* Fallback color */
     background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/ opacity */
+    /* Black w/ opacity */    
+
   }
   
   .modal-content {
     margin: auto;
     display: block;
     width: 100%;
-    max-width: 700px;
+    max-width: 85%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+   
+
+   
+
   }
   
   #caption {
@@ -230,37 +238,19 @@ body {
     height: 150px;
   }
   
-  .modal-content,
-  #caption {
-    animation-name: zoom;
-    animation-duration: 0.6s;
+
+
+  #headerPopup{
+    width:75%;
+    margin:0 auto;
   }
   
-  @keyframes zoom {
-    from {
-      transform: scale(0)
-    }
-    to {
-      transform: scale(1)
-    }
+  #headerPopup iframe{
+    width:100%;
+    margin:0 auto;
   }
   
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
   
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
   
   @media only screen and (max-width: 700px) {
     .modal-content {
