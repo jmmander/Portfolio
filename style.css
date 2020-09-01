@@ -222,18 +222,21 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-
   }
+
+
   
-  #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
+  .figure-caption {
+    color: #FFF;
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
+    right: 25%;
+    max-width: 100%;
     text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
+    background-color: #222;
+    padding: 10px
+
   }
   
 
@@ -252,7 +255,8 @@ body {
   
   @media only screen and (max-width: 700px) {
     .modal-content {
-      width: 100%;
+      max-width: 95%;
     }
+
   }
-  
+
