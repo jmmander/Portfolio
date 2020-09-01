@@ -10,14 +10,18 @@ var modal = document.getElementById('myModal');
 $(".img-thumbnail").on("click", function(e) {
     imgsrc = $(this).attr("id")
     if (imgsrc.slice(-3) === "png") {
-        $('#myModal').empty().append('<img class="modal-content" id="modalImg" />')
-        $("#modalImg").attr("src", imgsrc)
+        const caption =  $(this).attr("alt");
+        $('#myModal').empty().append('<img class="modal-content " id="modalImg" /> <figcaption class="figure-caption"><figcaption>');
+        $("#modalImg").attr("src", imgsrc);
+        $('.figure-caption').text(caption);
         modal.style.display = "block";
     }
     else {
-        ($('#myModal').empty().append('<video class="modal-content" id="video" controls autoplay></video>'));
+        ($('#myModal').empty().append('<video class="modal-content figure-img " id="video" controls autoplay></video> <figcaption class="figure-caption"></figcaption>'));
         ($("#video").append('<source id="vidSource" src="" type="video/mp4" ></source>'))
         $("#vidSource").attr("src", imgsrc)
+        const caption =  $(this).attr("alt");
+        $('.figure-caption').text(caption);
         modal.style.display = "block";
     }
 })
