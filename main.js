@@ -33,6 +33,18 @@ var mixer = mixitup(containerEl);
 
 //selects correct projets based on tags
 
+function overrideImportant() { 
+  $(".imgdiv").each(function() {
+    console.log("here")
+    if ($(this).context.style.display == "none") {
+      $(this).css("cssText", "display: none !important");
+      console.log($(this));
+    }
+  })
+}
+
+$(".btn").on('click', overrideImportant);
+
 
     //if (images[i].attr("display") == "none") {
       //(images[i].attr("display")) = "none !important";
