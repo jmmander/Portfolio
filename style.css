@@ -114,7 +114,7 @@ body {
 	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-    margin-bottom: 50px;
+    margin-bottom: 2em;
     
 }
 
@@ -135,6 +135,18 @@ body {
 	border: 1px solid #333;
 }
 
+.btn {
+  border-radius: 12px;
+  margin:auto;
+}
+
+.tags {
+  margin-top: -3em;
+  margin-bottom: 2em;
+  margin: -3em, auto, 2em, auto ;
+  display: flex;
+  justify-content: space-evenly
+}
 .contact {
     padding-top: 100px
 }
@@ -185,9 +197,16 @@ body {
     transition: 0.3s;
     padding: 2%;
   }
+
+  .imgdiv{
+    overflow:hidden;
+    max-height:18em;
+    max-width: 24em;
+  
+}
   
 .img-thumbnail:hover, .vid-thumbnail:hover{
-    opacity: 0.7;
+    opacity: 0.5;
   }
   
   .modal {
