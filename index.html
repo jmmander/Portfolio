@@ -48,52 +48,51 @@
   <h1>Projects</h1>
 	<div class="container features">
 		<div class="tags">
-			<p> <button class="btn" id="python">Python </button> 
-				<button class="btn" id="java">Java </button>
-				<button class="btn" id="javascript">JavaScript </button>
-				<button class="btn" id="html">HTML</button>
-				<button class="btn" id="css">CSS</button>
-				<button class="btn" id="angular">Angular </button>
-				<button class="btn" id="react">React </button>
-				<button class="btn" id="api">API</button></p>
+			<p> <button class="btn" id="python" type="button" data-filter=".python">Python </button> 
+				<button class="btn" id="java" data-filter=".java">Java </button>
+				<button class="btn" id="javascript" data-filter=".javascript">JavaScript </button>
+				<button class="btn" id="html" data-filter=".html">HTML</button>
+				<button class="btn" id="css" data-toggle=".css">CSS</button>
+				<button class="btn" id="angular" data-toggle=".angular">Angular </button>
+				<button class="btn" id="react" data-toggle=".react">React </button>
+				<button class="btn" id="api" data-toggle=".api">API</button></p>
 		</div>	
 		<div class="row">
-			<div class="d-flex col-lg-4 col-md-4 col-sm-12 imgdiv js react">
-        <img src="jammming.png" class="img-thumbnail" id="jammming.png" alt="A React powered app that connects to the Spotify API to provide users with a standalone platform to create new playlists and save them to their account.">
-      </div>
-			<div class=" d-flex col-lg-4 col-md-4 col-sm-12 imgdiv js react">
-        <img src="ravenous.png" class="img-thumbnail" id="ravenous.png" alt="A React powered app that connects to the Yelp API that allows users to search for restaurants, sort results by rating, reviews and distance and provides dynamic links to Google Maps and the restaurant webpage ">
-      </div>
-      <div class="d-flex col-lg-4 col-md-4 col-sm-12 imgdiv js react">
-        <img src="wanderlust.png" class="img-thumbnail" id="wanderlust.png" alt="A travel website that connects to the Open Weather API to provide current weather information and the Foursquare API to provide places of interest information for a given destination">
-	  </div>
-	</div>
-    <div class="row">
-			<div class="d-flex col-lg-4 col-md-4 col-sm-12 imgdiv js angular">
-				<img src="webform.png" class="img-thumbnail" id="webform.png" alt="A jQuery and Angular powered smart webform with client and sever side validation, dynamic branching logic based on user repspone. Webform responses connect to the google sheets API and written to a google sheet where an email is automaticly sent to the submittter. ">
-      </div>
-			<div class=" d-flex col-lg-4 col-md-4 col-sm-12 imgdiv java">
-        <img src="shapePlayer.png" class="img-thumbnail" id="shapePlayer.mp4" alt="A java powerered application that allows users to write and play music using shapes. ">
-      </div>
-      <div class="d-flex col-lg-4 col-md-4 col-sm-12 imgdiv java">
-		<img src="preview.png" class="img-thumbnail" id="preview.png" alt="A java powerered application that maps a live randomized subset of tweets based on geographical location of users and keyword searches by user. ">
-      </div>
-    </div>
-    <div class="row">
-			<div class="d-flex col-lg-4 col-md-4 col-sm-12 imgdiv python">
-				<img src="turtle.png" class="img-thumbnail" id="pythonTurtle.mp4" alt="A python powered program that uses turtle to recursivly draws trianges and create attractive patterns">
-      </div>
-			<div class=" d-flex col-lg-4 col-md-4 col-sm-12 imgdiv python">
-        <img src="dssScan.png" class="img-thumbnail" id="dssScan.mp4" alt="An open source python script run on Linux systems to scan for package dependencies as well as system requirements depending on user inputs prior to the installation of Dataiku Data Science Studio">
-      </div>
-      <div class="d-flex col-lg-4 col-md-4 col-sm-12 imgdiv python">
-        <img src="sudoku.png" class="img-thumbnail" id="sudoku.png" alt="A python script that takes an unsolved sudoku puzzle from the user and solves it ">
-      </div>
-    </div>
-    <div id="myModal" class="modal center-block">
-    </div>
-</div>
+			<div class="d-flex col-lg-4 col-md-4 col-sm-12 imgdiv js css html react api mix">
+        		<img src="jammming.png" class="img-thumbnail" id="jammming.png" alt="A React powered app that connects to the Spotify API to provide users with a standalone platform to create new playlists and save them to their account.">
+      		</div>
+			<div class=" d-flex col-lg-4 col-md-4 col-sm-12 imgdiv js css html react api mix">
+        		<img src="ravenous.png" class="img-thumbnail" id="ravenous.png" alt="A React powered app that connects to the Yelp API that allows users to search for restaurants, sort results by rating, reviews and distance and provides dynamic links to Google Maps and the restaurant webpage ">
+      		</div>
+      		<div class="d-flex col-lg-4 col-md-4 col-sm-12 imgdiv js css html react api mix">
+        		<img src="wanderlust.png" class="img-thumbnail" id="wanderlust.png" alt="A travel website that connects to the Open Weather API to provide current weather information and the Foursquare API to provide places of interest information for a given destination">
+	  		</div>
 
+			<div class="d-flex col-lg-4 col-md-4 col-sm-12 imgdiv js css html angular api mix">
+				<img src="webform.png" class="img-thumbnail" id="webform.png" alt="A jQuery and Angular powered smart webform with client and sever side validation, dynamic branching logic based on user repspone. Webform responses connect to the google sheets API and written to a google sheet where an email is automaticly sent to the submittter. ">
+      		</div>
+			<div class=" d-flex col-lg-4 col-md-4 col-sm-12 imgdiv java mix">
+        		<img src="shapePlayer.png" class="img-thumbnail" id="shapePlayer.mp4" alt="A java powerered application that allows users to write and play music using shapes. ">
+      		</div>
+      		<div class="d-flex col-lg-4 col-md-4 col-sm-12 imgdiv java api mix">
+				<img src="preview.png" class="img-thumbnail" id="preview.png" alt="A java powerered application that maps a live randomized subset of tweets based on geographical location of users and keyword searches by user. ">
+      		</div>
+
+			<div class="d-flex col-lg-4 col-md-4 col-sm-12 imgdiv python mix">
+				<img src="turtle.png" class="img-thumbnail" id="pythonTurtle.mp4" alt="A python powered program that uses turtle to recursivly draws trianges and create attractive patterns">
+      		</div>
+			<div class=" d-flex col-lg-4 col-md-4 col-sm-12 imgdiv python mix">
+        		<img src="dssScan.png" class="img-thumbnail" id="dssScan.png" alt="An open source python script run on Linux systems to scan for package dependencies as well as system requirements depending on user inputs prior to the installation of Dataiku Data Science Studio">
+      		</div>
+      		<div class="d-flex col-lg-4 col-md-4 col-sm-12 imgdiv python mix">
+        		<img src="sudoku.png" class="img-thumbnail" id="sudoku.png" alt="A python script that takes an unsolved sudoku puzzle from the user and solves it ">
+			</div>
+		</div>
+
+		<div id="myModal" class="modal center-block">
+		</div>
+	</div>
+</div>
 
   <section class="contactForm">
     <h3 class="Contact">Get in Touch!</h3>
@@ -135,5 +134,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="magnific-popup/jquery.magnific-popup.js"></script>
 <script src="main.js"></script>
+<script src="./mixitup/dist/mixitup.min.js"></script>
 </body>
 </html>

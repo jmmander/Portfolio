@@ -200,8 +200,8 @@ body {
 
   .imgdiv{
     overflow:hidden;
-    max-height:18em;
-    max-width: 24em;
+    height:18em;
+    width: 24em;
   
 }
   
