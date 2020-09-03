@@ -27,23 +27,40 @@ $(".img-thumbnail").on("click", function(e) {
     }
 })
 
-var containerEl = document.querySelector('.row');
 
-var mixer = mixitup(containerEl);
+$(".filter").on('click', function() {
+  filterTerm = $(this).attr("id");
+  if (!$(this).hasClass("clicked")){
+    $(this).addClass("clicked");
+    $(".imgdiv").each(function() {
+      if (!$(this).hasClass(filterTerm)) {
+        $(this).css("cssText", "display: none !important")
+      }
+      else {
+        $(this).css("cssText", "display: show")
+      }
+    })
+  }
+else {
+  $(this).removeClass("clicked");
+  $(".imgdiv").each(function() {
+    if (!$(this).hasClass(filterTerm)) {
+      $(this).css("cssText", "display: show");
+  }}
+)}
+})
+
 
 //selects correct projets based on tags
 
-function overrideImportant() { 
-  $(".imgdiv").each(function() {
-    console.log("here")
-    if ($(this).context.style.display == "none") {
-      $(this).css("cssText", "display: none !important");
-      console.log($(this));
-    }
-  })
-}
+//var containerEl = document.querySelector('.row');
 
-$(".btn").on('click', overrideImportant);
+//var mixer = mixitup(containerEl);
+
+
+
+
+//$(".btn").on('click', overrideImportant);
 
 
     //if (images[i].attr("display") == "none") {
