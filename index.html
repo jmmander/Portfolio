@@ -44,20 +44,18 @@
 			<button class="btn btn-outline-secondary btn-lg">Learn More</button>
 		</div>
   </header>
-  <div class=projects>
-  <h1>Projects</h1>
+  <section class=projects>
+  <h1>Portfolio</h1>
 	<div class="container features">
 		<div class="tags">
-			<p> <button class="btn" id="python" type="button" data-filter=".python">Python </button> 
-				<button class="btn" id="java" data-filter=".java">Java </button>
-				<button class="btn" id="javascript" data-filter=".js">JavaScript </button>
-				<button class="btn" id="html" data-filter=".html">HTML</button>
-				<button class="btn" id="css" data-filter=".css">CSS</button>
-				<button class="btn" id="angular" data-filter=".angular">Angular </button>
-				<button class="btn" id="react" data-filter=".react">React </button>
-				<button class="btn" id="api" data-filter=".api">API</button>
-				<br/>
-				<button class="btn" id="all" data-filter=".imgdiv">Show all </button>
+			<p> <button class="btn filter" id="python" type="button" data-filter=".python">Python </button> 
+				<button class="btn filter" id="java" data-filter=".java">Java </button>
+				<button class="btn filter" id="js" data-filter=".js">JavaScript </button>
+				<button class="btn filter" id="html" data-filter=".html">HTML</button>
+				<button class="btn filter" id="css" data-filter=".css">CSS</button>
+				<button class="btn filter" id="angular" data-filter=".angular">Angular </button>
+				<button class="btn filter" id="react" data-filter=".react">React </button>
+				<button class="btn filter" id="api" data-filter=".api">API</button>
 			</p>
 		</div>	
 		<div class="row">
@@ -67,7 +65,7 @@
 			<div class=" d-flex col-lg-4 col-md-4 col-sm-12 imgdiv js css html react api mix">
         		<img src="ravenous.png" class="img-thumbnail" id="ravenous.png" alt="A React powered app that connects to the Yelp API that allows users to search for restaurants, sort results by rating, reviews and distance and provides dynamic links to Google Maps and the restaurant webpage ">
       		</div>
-      		<div class="d-flex col-lg-4 col-md-4 col-sm-12 imgdiv js css html react api mix">
+      		<div class="d-flex col-lg-4 col-md-4 col-sm-12 imgdiv js css html api mix">
         		<img src="wanderlust.png" class="img-thumbnail" id="wanderlust.png" alt="A travel website that connects to the Open Weather API to provide current weather information and the Foursquare API to provide places of interest information for a given destination">
 	  		</div>
 
@@ -95,10 +93,11 @@
 		<div id="myModal" class="modal center-block">
 		</div>
 	</div>
-</div>
+</section>
 
   <section class="contactForm">
-    <h3 class="Contact">Get in Touch!</h3>
+	  <div class="container contact">
+		<h3 >Get in Touch!</h3>
 				<div class="form-group">
 					<input type="text" class="form-control" placeholder="Name" name="">
 				</div>
@@ -110,7 +109,7 @@
 				</div>
 				<input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
 			</div>
-	</div>
+		</section>
 	
 	<footer class="page-footer">
 		<div class="container">
