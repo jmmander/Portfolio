@@ -190,6 +190,9 @@ body {
   justify-content: space-evenly
 }
 
+.clicked {
+  background-color: rgb(234, 236, 193);
+}
 .img-thumbnail, .vid-thumbnail{
   border-color: white;
   cursor: pointer;
@@ -260,18 +263,17 @@ body {
 
 }
 
-/*--- contactform ---*/
+/*--- tech ---*/
 
-.contact {
-    max-width: 75%;
+.technical {
+    background: rgb(7,28,28);
 }
 
-.contactForm {
-  background: rgb(7,28,28);
-
+.tech {
+  max-width: 75%;
 }
 
-.contactForm h1{
+.tech h1{
   padding-bottom: 1em;
   color: white;
   text-align: center;

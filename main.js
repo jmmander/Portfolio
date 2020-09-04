@@ -27,11 +27,19 @@ $(".img-thumbnail").on("click", function(e) {
     }
 })
 
-
+//updates projects displayed depending on tag clicked
 $(".filter").on('click', function() {
   filterTerm = $(this).attr("id");
   if (!$(this).hasClass("clicked")){
     $(this).addClass("clicked");
+    $(".filter").each(function(){
+      if ($(this).attr("id") === filterTerm) {
+        $(this).css("cssText", "background: rgb(234, 236, 193);")
+      }
+      else{
+        $(this).css("cssText", "background: rgb(255, 255, 255);")
+      }
+    });
     $(".imgdiv").each(function() {
       if (!$(this).hasClass(filterTerm)) {
         $(this).css("cssText", "display: none !important")
@@ -43,6 +51,7 @@ $(".filter").on('click', function() {
   }
 else {
   $(this).removeClass("clicked");
+  $("#" + filterTerm).css("cssText", "background: rgb(255, 255, 255)");
   $(".imgdiv").each(function() {
     if (!$(this).hasClass(filterTerm)) {
       $(this).css("cssText", "display: show");
