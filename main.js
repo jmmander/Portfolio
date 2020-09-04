@@ -50,6 +50,10 @@ else {
 )}
 })
 
+//send user a message in console
+console.log("%cHi there! Thanks for checking out my source code. Got questions? Suggestions? Comments? Let me know!", 'color:cyan ; fontsize:30px; line-height: 25px; text-align: center; font-weight: bold')
+
+
 
 //selects correct projets based on tags
 
