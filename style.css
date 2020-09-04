@@ -1,7 +1,7 @@
 body {
 	padding: 0;
-	margin: 0;
-	background: #f2f6e9;
+  margin: 0;
+  background: rgb(5,10,31);;
 }
 
 /*--- navigation bar ---*/
@@ -38,7 +38,7 @@ body {
 /*--- header ---*/
 
 .header {
-	background-image: url('main.jpg');
+	background-image: url('background.png');
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -50,17 +50,7 @@ body {
 	min-width: 100%;
 	left: 0;
 	top: 0;
-	background: rgba(97, 98, 148, 0.5);
-}
-
-.projects h1 {
-    color: black;
-    text-align: center;
-    padding-top: 60px;
-}
-
-.projects {
-    background-color: rgb(236, 243, 248);
+	background: rgba(11, 11, 24, 0.5);
 }
 
 .description {
@@ -94,7 +84,59 @@ body {
 	color: #000;
 }
 
-/*--- feature section ---*/
+/*--- about section ---*/
+
+.fab {
+  font-size: 1.8em;
+}
+
+.intro {
+  max-width: 150%;
+  margin-left:4em;
+}
+
+.about {
+  background: #000006;
+  color: rgb(196, 203, 218)
+}
+
+.about h1  {
+  position: relative;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  }
+
+.intro a {
+  color:rgb(235, 235, 193);
+
+  }
+
+.profpic {
+  margin-left: -10%;
+  padding-bottom: 10%;
+
+}
+
+.prof {
+  position:relative;
+  max-width: 150%;
+  object-fit: contain;
+  height: 80%;
+}
+/*--- projects section ---*/
+
+.projects {
+  background-color: rgb(5,10,31);
+}
+
+.projects h1  {
+  color: white;
+  text-align: center;
+  padding-top: 2em;
+}
 
 .features {
 	margin: 4em auto;
@@ -114,7 +156,7 @@ body {
 	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-    margin-bottom: 2em;
+    
     
 }
 
@@ -131,7 +173,7 @@ body {
 }
 
 .features .filter:hover {
-	background-color: rgb(158, 206, 247);
+	background-color: rgb(234, 236, 193);
 	border: 1px solid #333;
 }
 
@@ -147,10 +189,95 @@ body {
   display: flex;
   justify-content: space-evenly
 }
+
+.img-thumbnail, .vid-thumbnail{
+  border-color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 2%;
+  background: white;
+  margin-bottom: 2em;
+}
+
+.imgdiv{
+  overflow:hidden;
+  height:18em;
+  width: 24em;
+  background: transparent;
+
+}
+
+.img-thumbnail:hover, .vid-thumbnail:hover{
+  opacity: 0.5;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */    
+
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 75%;
+  max-height: 75%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.figure-caption {
+  color: #FFF;
+  position: absolute;
+  bottom: 15%;
+  left: 25%;
+  right: 25%;
+  max-width: 100%;
+  text-align: center;
+  background-color: #222;
+  padding: 10px
+
+}
+
+/*--- contactform ---*/
+
 .contact {
     max-width: 75%;
 }
 
+.contactForm {
+  background: rgb(7,28,28);
+
+}
+
+.contactForm h1{
+  padding-bottom: 1em;
+  color: white;
+  text-align: center;
+  padding-top: 2em;
+
+}
 /*--- footer ---*/
 
 .page-footer {
@@ -191,72 +318,7 @@ body {
 
 }
 
-.img-thumbnail, .vid-thumbnail{
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    padding: 2%;
-  }
 
-  .imgdiv{
-    overflow:hidden;
-    height:18em;
-    width: 24em;
-  
-}
-  
-.img-thumbnail:hover, .vid-thumbnail:hover{
-    opacity: 0.5;
-  }
-  
-  .modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/ opacity */    
-
-  }
-  
-  .modal-content {
-    margin: auto;
-    display: block;
-    width: 100%;
-    max-width: 75%;
-    max-height: 75%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-
-  
-  .figure-caption {
-    color: #FFF;
-    position: absolute;
-    bottom: 15%;
-    left: 25%;
-    right: 25%;
-    max-width: 100%;
-    text-align: center;
-    background-color: #222;
-    padding: 10px
-
-  }
   
 
 
@@ -279,3 +341,4 @@ body {
 
   }
 
+ 
