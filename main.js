@@ -64,34 +64,8 @@ console.log("%cHi there! Thanks for checking out my source code. Got questions? 
 
 
 
-//selects correct projets based on tags
-
-//var containerEl = document.querySelector('.row');
-
-//var mixer = mixitup(containerEl);
 
 
-
-
-//$(".btn").on('click', overrideImportant);
-
-
-    //if (images[i].attr("display") == "none") {
-      //(images[i].attr("display")) = "none !important";
-    //}
-
- // const selection = $(this).attr("id");
-  //console.log(selection);
-  //if (selection === "python"){
-  //  console.log("here")
-  //  const pics = document.getElementsByClassName("js");
-   // for (let i = 0; i < pics.length; i++){
-    //  pics[i].style.display = "hidden";
-    //    }
-   //  }
-
-
-//})
 
 
   
