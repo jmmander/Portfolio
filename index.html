@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" href="logowhitebg.png">
 	<script src="https://kit.fontawesome.com/e41db2f2f6.js" crossorigin="anonymous"></script>
+
   </head>
 
 <body>
@@ -31,7 +32,7 @@
 					<a class="nav-link" href="#projects">Portfolio</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#contact">Technical</a>
+					<a class="nav-link" href="#technical">Technical</a>
 				</li>
 			</ul>
 		</div>
@@ -41,16 +42,16 @@
 		<div class="description">
 			<h1>Jacqueline Mander</h1>
 			<p>Software Developer</p>
-			<button class="btn btn-outline-secondary btn-lg">Learn More</button>
+			<a class="btn btn-outline-secondary btn-lg learnmore" href="#about">Learn More</a>
 		</div>
   </header>
 
-  <section class=about>
+  <section class="about" id="about">
 	<h1>About</h1>
 	  <div class="container">
 		  <div class=row>
 			<div class="col-lg-4 col-md-4 col-sm-12 profpic"> 
-				<img class="prof" src="pic1.jpg" />
+				<img class="prof" src="prof.png" />
 			</div>
 			<div class="col-lg-8 col-md-8 col-sm-12">
 				<div class = intro>
@@ -58,25 +59,27 @@
 				I'm a software engineer with a passion for building software with an injection of fun and creativity. I can work with lots of different langauges and frameworks but python remains my favourite!<br><br>
 				<p>If you want to chat about why python is the best thing ever or discuss a job opportunity, you can reach me through my <a href="linkedin.com/in/jacqueline-m-4452911a4">linkedin</a> or just <a href="mailto: mander.jacqueline@gmail.com" target="_blank" rel="noopener noreferrer">email me directly</a>! </p>
 				</p>
-				<a href="linkedin.com/in/jacqueline-m-4452911a4" target=”_blank” ><i class="fab fa-linkedin "></i></a>
-				<a href="https://github.com/jmmander" target=”_blank” ><i class="fab fa-github-square "></i></a>
+				<a href="linkedin.com/in/jacqueline-m-4452911a4" target=”_blank” ><i class="icon fab fa-linkedin "></i></a>
+				<a href="https://github.com/jmmander" target=”_blank” ><i class=" icon fab fa-github-square "></i></a>
+				<a href="mailto: mander.jacqueline@gmail.com" target="_blank" rel="noopener noreferrer"><i class=" icon fas fa-envelope-square"></i></a>
+
 			</div>
 			</div>
 	  </div>
 	  </div>
   </section >
-  <section class=projects>
+  <section class="projects" id="projects">
   <h1>Portfolio</h1>
 	<div class="container features">
 		<div class="tags">
-			<p> <button class="btn filter" id="python" type="button" data-filter=".python">Python </button> 
-				<button class="btn filter" id="java" data-filter=".java">Java </button>
-				<button class="btn filter" id="js" data-filter=".js">JavaScript </button>
-				<button class="btn filter" id="html" data-filter=".html">HTML</button>
-				<button class="btn filter" id="css" data-filter=".css">CSS</button>
-				<button class="btn filter" id="angular" data-filter=".angular">Angular </button>
-				<button class="btn filter" id="react" data-filter=".react">React </button>
-				<button class="btn filter" id="api" data-filter=".api">API</button>
+			<p> <button class="btn filter" id="python" type="button" >Python </button> 
+				<button class="btn filter" id="java" >Java </button>
+				<button class="btn filter" id="js" >JavaScript </button>
+				<button class="btn filter" id="html" >HTML</button>
+				<button class="btn filter" id="css" >CSS</button>
+				<button class="btn filter" id="angular" >Angular </button>
+				<button class="btn filter" id="react" >React </button>
+				<button class="btn filter" id="api" >API</button>
 			</p>
 		</div>	
 		<div class="row">
@@ -116,26 +119,40 @@
 	</div>
 </section>
 
-  <section class="technical">
+  <section class="technical" id="technical">
 	  <div class="container tech" id="tech">
 		<h1 >Technical</h1>
-		<p>I have worked with a variety of programming languages, frameworks and softwares.</p>
-		<div class=row>
-			<div class="d-flex col-lg-4 col-md-4 col-sm-12   ">
-				<uo>Langauges
-					<li>python</li>
-				</uo>
+		<div class="techcontent">
+		<p class="techintro">I have worked with a variety of programming languages, frameworks and softwares. My go-to language for fun projects and exploring new ideas is python, but when I need performace I use Java and when I want to make something pretty I turn to CSS and HTML. </p>
+		<div class="row tools">
+			<div class="d-flex col-lg-3 col-md-3 col-sm-3 justify-content-center skill ">
+				<p>Python</p>
 			</div>
-			<div class="d-flex col-lg-4 col-md-4 col-sm-12   ">
-				<uo>IDES
-					<li>Visual Studio</li>
-				</uo>
+			<div class="d-flex col-lg-3 col-md-3 col-sm-3  justify-content-center skill ">
+				<p>Git</p>
 			</div>
-			<div class="d-flex col-lg-4 col-md-4 col-sm-12   ">
-				<uo>Other
-					<li>git</li>
-				</uo>
+			<div class="d-flex col-lg-3 col-md-3 col-sm-3   justify-content-center skill">
+				<p>jQuery</p>
 			</div>
+			<div class="d-flex col-lg-3 col-md-3 col-sm-3 justify-content-center skill ">
+				<p>Linux</p>
+			</div>
+			<div class="d-flex col-lg-12 col-md-12 col-sm-12 tagline justify-content-center ">	
+				<p><strong> Frequently used tools</strong></p>
+			</div>
+			<div class="d-flex col-lg-3 col-md-3 col-sm-3 justify-content-center skill  ">
+				<p>SQL</p>
+			</div>
+			<div class="d-flex col-lg-3 col-md-3 col-sm-3 justify-content-center skill  ">
+				<p>Bootstrap</p>
+			</div>
+			<div class="d-flex col-lg-3 col-md-3 col-sm-3  justify-content-center skill ">
+				<p>DSS</p>
+			</div>
+			<div class="d-flex col-lg-3 col-md-3 col-sm-3 justify-content-center skill  ">
+				<p>Google apps</p>
+			</div>	
+		</div>
 		</div>
 	  </div>
   </section>
@@ -144,20 +161,19 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-md-8 col-sm-12">
-					<h6 class="text-uppercase font-weight-bold">Additional Information</h6>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+					<h6 class="font-weight-bold">Additional Information</h6>
+					<p>You can checkout all the source code for this website on <a href="https://github.com/jmmander/Portfolio" target=”_blank”>my github here</a>. Should you happen to find some inspiration or come across some useful code snippets, you can say thanks with an <a href="linkedin.com/in/jacqueline-m-4452911a4" target=”_blank” >endorsement on my linkedin </a></p>
+					<p>If you want to know more or get in touch for whatever reason you can <a href="mailto: mander.jacqueline@gmail.com" target="_blank" rel="noopener noreferrer">email me here </a>or just shoot me a <a href="linkedin.com/in/jacqueline-m-4452911a4" target=”_blank”>message on Linkedin </a></p>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-12">
-					<h6 class="text-uppercase font-weight-bold">Contact</h6>
-					<p>1640 Riverside Drive, Hill Valley, California
-					<br/>info@mywebsite.com
-					<br/>+ 01 234 567 88
-					<br/>+ 01 234 567 89</p>
+					<h6 class=" font-weight-bold">Contact</h6>
+					<a href="linkedin.com/in/jacqueline-m-4452911a4" target=”_blank” ><i class="fab icon fa-linkedin "></i></a>
+					<a href="https://github.com/jmmander" target=”_blank” ><i class="fab icon fa-github-square "></i></a>
+					<a href="mailto: mander.jacqueline@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas icon fa-envelope-square"></i></a>
 				</div>
 			</div>
 		</div>
-		<div class="footer-copyright text-center">© 2019 Copyright: MyWebsite.com</div>
+		
 	</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
