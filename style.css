@@ -1,7 +1,7 @@
 body {
 	padding: 0;
   margin: 0;
-  background: rgb(5,10,31);;
+  background: rgb(2, 4, 15);
 }
 
 /*--- navigation bar ---*/
@@ -71,14 +71,14 @@ body {
 	line-height: 1.5;
 }
 
-.description button {
+.description a {
 	border: 1px solid #ffffff;
 	background: #ffffff;
 	border-radius: 0;
 	color: rgb(0, 0, 0);
 }
 
-.description button:hover {
+.description a:hover {
 	border: 1px solid #fff;
 	background: #fff;
 	color: #000;
@@ -86,8 +86,13 @@ body {
 
 /*--- about section ---*/
 
-.fab {
+.icon {
   font-size: 1.8em;
+  color: white;
+  padding: 3px;
+}
+.icon:hover {
+  color: rgb(235, 235, 193);
 }
 
 .intro {
@@ -129,7 +134,7 @@ body {
 /*--- projects section ---*/
 
 .projects {
-  background-color: rgb(5,10,31);
+  background-color: rgb(2, 4, 15);
 }
 
 .projects h1  {
@@ -266,7 +271,7 @@ body {
 /*--- tech ---*/
 
 .technical {
-    background: rgb(7,28,28);
+    background: rgb(3, 10, 10);
 }
 
 .tech {
@@ -280,6 +285,38 @@ body {
   padding-top: 2em;
 
 }
+
+.techcontent {
+  color: rgb(196, 203, 218);
+
+
+}
+
+.techintro {
+  padding-bottom: 2em;
+}
+
+.skill {
+  text-align: center;
+  display: relative;
+  color: rgb(234, 236, 193);
+}
+
+
+.skill p {
+  display: inline-block
+}
+
+.tagline {
+  padding:1em;
+  font-size: 1.5em;
+}
+
+.tools {
+  padding:2em 0 8em 0; 
+}
+
+
 /*--- footer ---*/
 
 .page-footer {
@@ -287,9 +324,12 @@ body {
 	color: #ccc;
 	padding: 60px 0 30px;
 }
+.page-footer a{
+ color: rgb(234, 236, 193);
+}
 
 .footer-copyright {
-	color: #666;
+	color: rgb(37, 37, 37);
 	padding: 40px 0;
 }
 
