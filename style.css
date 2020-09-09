@@ -87,7 +87,7 @@ body {
 /*--- about section ---*/
 
 .icon {
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: white;
   padding: 3px;
 }
@@ -245,6 +245,7 @@ body {
   margin: auto;
   display: block;
   max-height: 75%;
+  
   position: absolute;
   left: 50%;
   top: 50%;
