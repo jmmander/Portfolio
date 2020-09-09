@@ -244,13 +244,13 @@ body {
 .modal-content {
   margin: auto;
   display: block;
-  width: 100%;
-  max-width: 75%;
   max-height: 75%;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  object-fit: contain;
+  background: none;
 }
 
 
@@ -300,16 +300,18 @@ body {
   text-align: center;
   display: relative;
   color: rgb(234, 236, 193);
+  
 }
 
 
 .skill p {
-  display: inline-block
+  display: inline-block;
+  size: 2em;
 }
 
 .tagline {
   padding:1em;
-  font-size: 1.5em;
+
 }
 
 .tools {
