@@ -2,6 +2,7 @@
 
 $(document).ready(function(){
     $('.header').height($(window).height());
+    //$('body').css( "maxWidth", ( $( window ).width())) 
 
 
 
@@ -34,10 +35,10 @@ $(".filter").on('click', function() {
     $(this).addClass("clicked");
     $(".filter").each(function(){
       if ($(this).attr("id") === filterTerm) {
-        $(this).css("cssText", "background: rgb(234, 236, 193);")
+        $(this).css("cssText", " opacity: 1")
       }
       else{
-        $(this).css("cssText", "background: rgb(255, 255, 255);")
+        $(this).css("cssText", "opacity: 0.7")
       }
     });
     $(".imgdiv").each(function() {
@@ -51,7 +52,7 @@ $(".filter").on('click', function() {
   }
 else {
   $(this).removeClass("clicked");
-  $("#" + filterTerm).css("cssText", "background: rgb(255, 255, 255)");
+  $("#" + filterTerm).css("cssText", "opacity: 0.7");
   $(".imgdiv").each(function() {
     if (!$(this).hasClass(filterTerm)) {
       $(this).css("cssText", "display: show");
