@@ -3,7 +3,7 @@
 $(document).ready(function(){
     $('.header').height($(window).height());
     //$('body').css( "maxWidth", ( $( window ).width())) 
-
+    //$('.projects').height($(window).height());
 
 
 //selects correct modal image based on user click event
@@ -19,7 +19,7 @@ $(".img-thumbnail").on("click", function(e) {
         modal.style.display = "block";
         }
     else {
-        ($('#myModal').empty().append('<video class="modal-content figure-img " id="video" controls autoplay></video> <figcaption class="figure-caption"></figcaption>'));
+        ($('#myModal').empty().append('<video class="modal-content figure-img " id="video" autoplay></video> <figcaption class="figure-caption"></figcaption>'));
         ($("#video").append('<source id="vidSource" src="" type="video/mp4" ></source>'))
         $("#vidSource").attr("src", imgsrc)
         const caption =  $(this).attr("alt");
@@ -35,7 +35,8 @@ $(".filter").on('click', function() {
     $(this).addClass("clicked");
     $(".filter").each(function(){
       if ($(this).attr("id") === filterTerm) {
-        $(this).css("cssText", " opacity: 1")
+        $(this).css("cssText", " opacity: 0.9")
+        console.log("here")
       }
       else{
         $(this).css("cssText", "opacity: 0.7")
@@ -46,7 +47,8 @@ $(".filter").on('click', function() {
         $(this).css("cssText", "display: none !important")
       }
       else {
-        $(this).css("cssText", "display: show")
+        $(this).css("cssText", "display: show; opacity: 0.9")
+        console.log("here")
       }
     })
   }
@@ -55,7 +57,7 @@ else {
   $("#" + filterTerm).css("cssText", "opacity: 0.7");
   $(".imgdiv").each(function() {
     if (!$(this).hasClass(filterTerm)) {
-      $(this).css("cssText", "display: show");
+      $(this).css("cssText", "display: show; opacity: 0.9");
   }}
 )}
 })
